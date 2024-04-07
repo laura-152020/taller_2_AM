@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Carrito de compras JS</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdulería Lo de Chola</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Harmattan&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <!--encabezado-->
+        <div id ="jumbo" class="jumbotron jumbotron-fluid" style="background-image: url(https://images.pexels.com/photos/264537/pexels-photo-264537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); background-repeat: no-repeat; background-size: cover; color: ivory">
+            <div class="container">
+              <h1 class="display-4" style="font-size: 3em; font-family: 'Staatliches', cursive;"><span class="span">Verdulería LO DE CHOLA</span></h1>
+              <p class="lead" style="font-size: 1.5em; font-family: 'Harmattan', sans-serif"><span class="span">Promo cuarentena! Realizando su compra antes de las 16hs la recibirá en su hogar antes de nuestro horario de cierre.</span></p>
+            </div>
+        </div>
+        <!--tabla izquierda, lista de productos-->
+        <div id="contproductos">
+            <table class="table table-sm" style="font-family: 'Harmattan', sans-serif; text-align: center">
+                <thead>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Cantidad</th>
+                    <th>Agregar al carrito</th>
+                </thead>
+                <tbody id="productos" style="font-size: 1em; font-family: 'Staatliches', cursive;">
+
+                </tbody>
+            </table>
+        </div>
+        <!--tabla derecha, carrito con productos agregados-->
+        <div id="contcarrito">
+            <table class="table table-sm" style="font-family: 'Harmattan', sans-serif; text-align: center">
+                <thead>
+                    <th>Nombre</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                    <th>Precio total</th>
+                    <th>Quitar del carrito</th>
+                </thead>
+                <tbody id="carrito" style="font-size: 1em; font-family: 'Staatliches', cursive">
+                </tbody>
+            </table>
+        </div>
+        <!--izq- mensaje de error-->
+        <div class= "error">
+            <div id="mensaje" class="alert alert-primary" style = "background-color: #FC3309 !important; height: 2.5em; color: ivory; text-align: center; font-size: 1em; font-family: 'Harmattan', sans-serif; text-transform: uppercase; border: 0px; border-radius: 0px;"></div>
+        </div>
+        <!--der- finalización de compra-->
+        <div class="fin">
+            <button id="completarCompra" onclick="completarCompra()" class="btn btn-outline-dark" style="background-color: #FC3309; color: ivory !important; max-height: 2.5em; border: 0px; border-radius: 0px;">Completar compra</button>
+            <div id="total" class="alert alert-primary" style="background-color: #F49950 !important; color: #363958 !important; max-height: 2.5em; text-align: center; font-size: 1em; line-height: 1em; font-family: 'Harmattan', sans-serif; font-weight: 700; text-transform: uppercase; border: 0px; border-radius: 0px;"></div>
+        </div>
+        <!--pie de página informativo-->
+        <div class="footer">
+            <p class="span" style="font-size: 1em; font-family: 'Harmattan', sans-serif; color: ivory; text-align: center">Verdulería Lo de Chola. Catamarca 2114, Mar del Plata. Horario: Lunes a Sábados de 9 a 19hs. Domingos de 9 a 13:30hs. Contacto: 2234654689</p>
+            <p style="width: 100%; font-size: 1em; font-family: 'Harmattan', sans-serif; color: #363958; margin-top: 0px; text-align: center">Desarrollado por Lucía Obregón para el curso de Programador Fullstack Inicial - UTN 2020</p>
+        </div>
+    </div>
+    <script src="/javascript/script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

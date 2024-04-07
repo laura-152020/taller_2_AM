@@ -1,0 +1,95 @@
+/* Paleta de colores: 
+
+creada en https://www.colourlovers.com/palette/4756447/verduleria?sAC=1
+rojo: #FC3309
+naranja: #F49950
+violeta: #363958
+verde: #779000
+verde claro: #D1D800
+
+*/
+
+
+.contenedor{
+    /* definición de la grilla de la web */
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-areas: 
+    "jumbo jumbo"
+    "productos carrito"
+    "error total"
+    "footer footer";
+    margin: 0.5;
+}
+
+
+.span{
+    background-color: #363958;
+}
+
+
+#jumbo{
+    /* encabezado */
+    grid-area: jumbo;
+    border-bottom: solid 2em #D1D800;
+
+}
+
+
+#contproductos{
+    /* tabla izq, lista de productos */
+    grid-area: productos;
+    border-right: solid 0.5em #779000;
+    margin-right: 1em;
+    margin-top: -2em;
+    padding-top: 1em;
+    
+}
+
+#contcarrito{
+    /* tabla der, lista de productos en el carrito */
+    grid-area: carrito;
+    margin-top: -2em;
+    padding-top: 1em;
+
+}
+
+.error{
+    /* área donde se muestran los mensajes de error y confirmación */
+    grid-area: error;
+    background-color: #779000;
+    
+}
+
+.fin{
+    /* área de finalización de compra */
+    grid-area: total;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "boton tot";
+    background-color: #779000;
+}
+
+/* configuración dentro de la finalización de compra */
+    #completarCompra{
+        grid-area: boton;
+    }
+
+    #total{
+        grid-area: tot;
+    }
+
+/* configuración de los botones de la web */
+button {
+    background-color: #F49950;
+    color: ivory;
+    font-family: 'Harmattan', sans-serif !important;
+    border: 0px; 
+    border-radius: 0px;
+}
+
+/* pie de página con información */
+.footer{
+    grid-area: footer;
+}
