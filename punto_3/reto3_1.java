@@ -1,6 +1,6 @@
 import java.util.*;
 
-class reto4 {
+class reto3_1 {
     public static String cadenaLarga(String s) {
         if (s == null || s.length() == 0) {
             return "";
