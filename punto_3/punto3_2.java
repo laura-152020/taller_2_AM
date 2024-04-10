@@ -39,7 +39,7 @@ public class punto3_2 {
     }
 
     public static void main(String[] args) {
-        String entrada = "787262";
+        String entrada = "72256";
         List<String> resultado = posiblesCombinaciones(entrada);
         System.out.println("Las posibles combinaciones para " + entrada + " son: " + resultado);
     }
