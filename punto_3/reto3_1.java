@@ -27,7 +27,7 @@ class reto3_1 {
     }
 
     public static void main(String[] args) {
-        String input = "psicologia";
+        String input = "holamundo";
         System.out.println("Lo que se puso: " + input);
         System.out.println("El substring sin repetir más largo es: " + cadenaLarga(input));
     }
